@@ -90,7 +90,7 @@ with open("medium_stats_ready_for_database_update.csv", "w") as f:
 # import requests
 # import csv 
 
-# url = 'https://gf641ea24ecc468-darmok.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/mediumstats/batchload' 
+# url = '[ORDS Endpoint]'  
 
 # with open('pandasdf.csv', 'rb') as f:
 #     data = f.read()
