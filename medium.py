@@ -66,55 +66,55 @@ with open("medium_stats_ready_for_database_update.csv", "w") as f:
 
 
 
-url = 'https://gf641ea24ecc468-darmok.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/mediumstats/batchload' 
+# url = '[ORDS Endpoint]' 
 
-# import mimetypes
+# # import mimetypes
 
-# with open('/Users/choina/Documents/socialstats/pandasdf.csv', 'r') as f:
-#     mimetypes.read_mime_types
-#     mimetypes.guess_type('/Users/choina/Documents/socialstats/pandasdf.csv')
-#     print(mimetypes.readfp('file: /Users/choina/Documents/socialstats/pandasdf.csv'))
+# # with open('/Users/choina/Documents/socialstats/pandasdf.csv', 'r') as f:
+# #     mimetypes.read_mime_types
+# #     mimetypes.guess_type('/Users/choina/Documents/socialstats/pandasdf.csv')
+# #     print(mimetypes.readfp('file: /Users/choina/Documents/socialstats/pandasdf.csv'))
 
-# r = requests.post(url)
-# print(r.raise_for_status)
-# print(r.text)
+# # r = requests.post(url)
+# # print(r.raise_for_status)
+# # print(r.text)
+# # print(r.content)
+# # print(r.headers)
+
+# # r = requests.get(url)
+# # r.headers
+# # r.cookies
+
+# files = (open('pandasdf.csv', 'rb'), 'text/csv')
+
+# import requests
+# import csv 
+
+# url = 'https://gf641ea24ecc468-darmok.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/mediumstats/batchload' 
+
+# with open('pandasdf.csv', 'rb') as f:
+#     data = f.read()
+
+# headers = {'Content-Type': 'text/csv','accept': 'application/json'}
+# r = requests.post(url, data=data, headers=headers)
+
+# print(r.status_code)
 # print(r.content)
-# print(r.headers)
+# print(r.text)
 
-# r = requests.get(url)
-# r.headers
-# r.cookies
+# files = f
+# headers = {"Content-Type": "text/csv"}
 
-files = (open('pandasdf.csv', 'rb'), 'text/csv')
+# print(r.text)
 
-import requests
-import csv 
+# files = {'file:' (open('/Users/choina/Documents/socialstats/pandasdf.csv', 'rb'))}
 
-url = 'https://gf641ea24ecc468-darmok.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/mediumstats/batchload' 
+# import csv 
 
-with open('pandasdf.csv', 'rb') as f:
-    data = f.read()
+# with open('pandasdf.csv', 'r') as file:
+#     csv_reader = csv.reader(file)
 
-headers = {'Content-Type': 'text/csv','accept': 'application/json'}
-r = requests.post(url, data=data, headers=headers)
+#     for line in csv_reader:
+#         print(line[2])
 
-print(r.status_code)
-print(r.content)
-print(r.text)
-
-files = f
-headers = {"Content-Type": "text/csv"}
-
-print(r.text)
-
-files = {'file:' (open('/Users/choina/Documents/socialstats/pandasdf.csv', 'rb'))}
-
-import csv 
-
-with open('pandasdf.csv', 'r') as file:
-    csv_reader = csv.reader(file)
-
-    for line in csv_reader:
-        print(line[2])
-
-    print(csv_reader)
+#     print(csv_reader)
